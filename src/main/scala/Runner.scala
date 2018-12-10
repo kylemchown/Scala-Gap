@@ -39,10 +39,15 @@ object Runner extends App{
 //  println(set1 & set2)
 //  println(set1 &~ set2)
 
-  val map1 = collect.ExampleMap.testMap
-  println(map1(1))
-  println(map1 contains 2)
-  println(map1.keys)
-  println((map1 + (3 -> "c")).keys)
+//  val map1 = collect.ExampleMap.testMap
+//  println(map1(1))
+//  println(map1 contains 2)
+//  println(map1.keys)
+//  println((map1 + (3 -> "c")).keys)
+
+  val fibs = collect.ExampleStream.fibs
+  fibs take 5 foreach println
+  println("======")
+  fibs take 10 foreach println
 
 }
