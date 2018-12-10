@@ -45,9 +45,14 @@ object Runner extends App{
 //  println(map1.keys)
 //  println((map1 + (3 -> "c")).keys)
 
-  val fibs = collect.ExampleStream.fibs
-  fibs take 5 foreach println
-  println("======")
-  fibs take 10 foreach println
+//  val fibs = collect.ExampleStream.fibs
+//  fibs take 5 foreach println
+//  println("======")
+//  fibs take 10 foreach println
+
+  println(optionals.Option.optionalTest1(None))
+  println(optionals.Option.optionalTest1(Some("asdfghjkl")))
+  println(optionals.Option.optionalTest2())
+  println(optionals.Option.optionalVal.getOrElse("No Value"))
 
 }
